@@ -80,5 +80,5 @@ Para visualizar o projeto, siga os passos abaixo:
 https://github.com/user-attachments/assets/a366daf4-061a-4ea8-9b82-79b2a683dcf0
 
 
-## 🧑‍💻 DESENVOLVEDORES  
+## 🧑‍💻 DESENVOLVEDOR  
 Lorrane Maria Moreira Neves ([Linkedin]([link_do_seu_linkedin](https://www.linkedin.com/in/lorrane-maria-5396b021b/))) / Contato: lorranemaria57@gmail.com
