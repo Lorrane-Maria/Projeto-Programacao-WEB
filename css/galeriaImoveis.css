@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/*{
+    outline: 1px dotted red;
+  }*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202c36;
+  padding: 8px 8px;
+}
+
+header img {
+  width: 190px;
+  height: 80px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  /*Altera a cor ao passar o mouse*/
+  background-color: #c3993e;
+}
+
+.ativa {
+  background-color: #c3993e;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.filtros {
+  border: 1px solid #ccc;
+  padding: 20px;
+  right: 10px;
+  order: 1;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filtros label,
+.filtros select {
+  display: block;
+  margin-bottom: 10px; 
+  width: 100%; 
+}
+
+.filtros select {
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff; 
+}
+
+.filtros h2 {
+  margin-bottom: 20px;
+}
+
+.imoveis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+}
+
+.imovel {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ImgImoveis {
+  width: 100%;
+  max-height: 750px;
+}
+
+.imovel-info {
+  padding-top: 10px;
+  font-family: "Questrial", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+}
+
+.icones span {
+  display: flex;
+  align-items: center;
+}
+
+.icones em {
+  margin-left: 5px;
+  margin-right: 2px; 
+  font-style: normal; 
+  font-size: 16px; 
+}
+
+.iconesCasa[data-alt="Localizacao"] {
+  width: 20px;
+  height: auto;
+  margin-right: 2px;
+}
+
+.localizacao {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.iconesCasa {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.preco {
+  font-weight: bold;
+  color: #c3993e;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #202c36;
+  padding: 20px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.footer-colunas {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-coluna {
+  flex: none;
+}
+
+.footer-logo {
+  margin-left: -10px;
+}
+
+.footer-coluna:last-child {
+  margin-right: 0; 
+}
+
+.footer-titulo {
+  margin: 0; 
+  font-weight: normal; 
+}
+
+.footer-coluna ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+footer li a {
+  display: block;
+  color: #ffffff;
+  padding: 20px 1px;
+  text-decoration: none;
+}
+
+#email {
+  display: block;
+  color: #ffffff;
+  padding: 1px 1px;
+  text-decoration: none;
+}
+
+#analise {
+  display: block;
+  color: #ffffff;
+  padding: 1px 1px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.direitos-e-redes {
+  display: flex; 
+  align-items: center; 
+  margin-top: 40px; 
+}
+
+.direitos {
+  margin: 0; 
+  font-family: Rubik, sans-serif;
+  font-size: 11px;
+  margin-left: -4px;
+}
+
+.imagens-rodape {
+  display: flex; 
+  gap: 10px; 
+  margin-left: 10px;
+}
+
+.imagens-rodape img {
+  width: 30px; 
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}

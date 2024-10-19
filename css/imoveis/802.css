@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/*{
+    outline: 1px dotted red;
+  }*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202c36;
+  padding: 8px 8px;
+}
+
+header img {
+  width: 190px;
+  height: 80px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #c3993e;
+}
+
+.ativa {
+  background-color: #c3993e;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagem {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.detalhes {
+  flex: 1;
+  max-width: 400px;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
+
+.carousel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked+.carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3,
+#carousel-4:checked~.control-4,
+#carousel-5:checked~.control-5,
+#carousel-6:checked~.control-6,
+#carousel-7:checked~.control-7,
+#carousel-8:checked~.control-8,
+#carousel-9:checked~.control-9,
+#carousel-10:checked~.control-10 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.local {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+}
+
+.icones {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.agendaVisita {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #c3993e;
+  color: #000000;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.preco {
+  background-color: #c3993e;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 15px;
+  max-width: 110px;
+  height: 4.5%;
+}
+
+footer {
+  background-color: #202c36;
+  padding: 20px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.footer-colunas {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-coluna {
+  flex: none;
+}
+
+.footer-logo {
+  margin-left: -10px;
+}
+
+.footer-coluna:last-child {
+  margin-right: 0;
+}
+
+.footer-titulo {
+  margin: 0;
+  font-weight: normal;
+}
+
+.footer-coluna ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li a {
+  display: block;
+  color: #ffffff;
+  padding: 20px 1px;
+  text-decoration: none;
+}
+
+#email,
+#analise {
+  display: block;
+  color: #ffffff;
+  padding: 1px 1px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.direitos-e-redes {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.direitos {
+  margin: 0;
+  font-family: Rubik, sans-serif;
+  font-size: 11px;
+  margin-left: -4px;
+}
+
+.imagens-rodape {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.imagens-rodape img {
+  width: 30px;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+input#slide1:checked~.navigation label[for="slide1"],
+input#slide2:checked~.navigation label[for="slide2"],
+input#slide3:checked~.navigation label[for="slide3"],
+input#slide4:checked~.navigation label[for="slide4"],
+input#slide5:checked~.navigation label[for="slide5"],
+input#slide6:checked~.navigation label[for="slide6"],
+input#slide7:checked~.navigation label[for="slide7"],
+input#slide8:checked~.navigation label[for="slide8"],
+input#slide9:checked~.navigation label[for="slide9"] {
+  background-color: #555;
+}
